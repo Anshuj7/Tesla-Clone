@@ -1,0 +1,217 @@
+/* ======== CONTAINER SECTION BEGINS ========= */
+.container{
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.container__section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.container__section#one{
+    background: url(../img/M3-Homepage-D.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__section#two{
+    background: url(../img/model-Y.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__section#three{
+    background: url(../img/model-S.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__section#four{
+    background: url(../img/model-X.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__section#five{
+    background: url(../img/solar-panel.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__section#six{
+    background: url(../img/solar-roof.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__section#seven{
+   background: url(../img/accessories.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 0 3rem;
+    box-sizing: border-box;
+}
+
+.container__content-header h2{
+    color: #333;
+    font-size: 2.7rem;
+    text-align: center;
+    margin: 0;
+}
+
+.container__content-header p{
+    margin: 0;
+    margin-top: .25rem;
+    color: #5c5d61;
+    font-size: .9rem;
+}
+
+.container__content-header p a{
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    color: #5c5d61;
+}
+
+.container__content-header p a:hover{
+    box-shadow: 0 1.2px 0 0 currentColor;
+    color: #181b21;
+    transition: .3s ease;
+}
+
+.btn{
+    border: none;
+    min-width: 15.95rem;
+    min-height: 2.53rem;
+    padding: .09rem 2rem;
+    border-radius: 2rem;
+    font-size: .78rem;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: .82px;
+}
+
+.btn-dark{
+    background-color: rgba(23, 26, 32, 0.8);
+    opacity: 8;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-light{
+    background-color: rgba(255, 255, 255, 0.56);
+    opacity: 6;
+}
+
+.ml{
+    margin-left: 1.25rem;
+    margin-bottom: 2.32rem;
+}
+
+.container__content-footer{
+    position: relative;
+}
+
+.container__down-arrow{
+    position: absolute;
+    left: 47%;
+    margin-top: 4rem;
+    animation: jump 1s ease infinite ;
+}
+
+@keyframes jump {
+   0%{
+       top: 0px;
+   }
+   
+   30%{
+       top: 6px ;
+   }
+
+   50%{
+       top: 0;
+   }
+
+   70%{
+       top: 2.5px;
+   }
+
+   85%{
+       top: 1px;
+   }
+
+   100%{
+        top: 0px; 
+   } 
+
+}
+
+@media screen and (max-width: 500px){
+    .container__content-header h2{
+        font-size: 1.8rem;
+    }
+    .container__content-header p{
+        font-size: .75rem;
+    }
+    .container__section#one{
+        background: url('../img/M3-Homepage-M.jpg');
+        background-size: cover;
+    background-position: center;
+    }
+    .container__section#two{
+        background: url('../img/Mobile-ModelY.jpg');
+        background-size: cover;
+    background-position: center;
+    }
+    .container__section#three{
+        background: url('../img/ms-homepage-mobile.jpg');
+        background-size: cover;
+    background-position: center;
+    }
+    .container__section#four{
+        background: url('../img/ModelX-Homepage-M.jpg');
+        background-size: cover;
+    background-position: center;
+    }
+    .container__section#five{
+        background: url('../img/_25-HP-SolarPanels-M.jpg');
+        background-size: cover;
+    background-position: center;
+    }
+    .container__section#six{
+        background: url('../img/HP-SR-Design-M.jpg');
+        background-size: cover;
+    background-position: center;
+    }
+    .container__section#seven{
+        background: url('../img/Mobile-Accessories.jpg');
+        background-size: cover;
+    background-position: center;
+    }
+    .container__content-footer{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    }
+    .ml{
+        margin-left: 0;
+    }
+    .btn{
+        margin: 0 0 1rem 0;
+    }
+    .container__down-arrow{
+        margin-top: 7rem;
+    left: 45%;
+    }
+}

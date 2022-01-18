@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@font-face {
+    font-family: tesla;
+    src: url('assets/font/tesla.ttf');
+}
+body {
+	font-family: "Quicksand", sans-serif;
+	background: #ccc;
+	background-size: cover;
+	background-position-x: center;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}

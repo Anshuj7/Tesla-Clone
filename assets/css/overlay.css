@@ -1,0 +1,138 @@
+/* ============ OVERLAY SECTION ============= */
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    display: none;
+    justify-content: end;
+    transition: 1s ease;
+    overflow: auto;
+}
+
+.overlay.show{
+    display: flex;
+    transition: 1s ease;
+}
+
+.overlay__menu{
+   background-color: #fff; 
+   /* padding: 0 0 0 1.3rem; */
+   height: 135vh;
+   padding-bottom: 2rem;
+}
+
+.overlay__close{
+    /* padding: 2rem 0; */
+    margin-left: 15rem;
+    padding-top: 1rem;
+    text-align: right;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.overlay__list{
+    list-style: none;
+    padding-left: 42px;
+}
+
+.overlay__list a{
+    text-decoration: none;
+    color: #393c41;
+    font-size: .85rem;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+/* .overlay__list a:hover{
+    background: hsla(0,0%,0%,.05);
+    border-radius: 12px;
+    padding: .2rem 3rem .2rem .9rem;
+} */
+
+.overlay__list a:hover{
+    border-bottom: 2px solid #000;
+    border-radius: 2px;
+}
+
+
+.overlay__list li .bx{
+    font-size: 1.5rem;
+}
+
+.overlay__list li b{
+    font-size: 1.2rem;
+    padding-left: .51rem;
+}
+
+.overlay__list li{
+    margin-bottom: 1.3rem;
+}
+
+.overlay__list h6{
+    margin: 0;
+    padding-left: 2rem;
+    padding-top: .35rem;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.overlay__list h6 a{
+    text-decoration: none;
+    color: #393c41;
+}
+
+.list__hide{
+    display: none;
+}
+
+.region{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.overlay__list .region{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1100px){
+    .list__hide{
+        display: list-item;
+    }
+
+    .overlay__menu{
+        background-color: #fff; 
+        padding: 0 0 0 3rem;
+        height: 180vh;
+        padding-bottom: 2rem;
+     }
+}
+
+@media screen and (max-width: 500px){
+    .overlay__close{
+        margin-right: 2rem;
+    }
+    .overlay__menu{
+        height: 180vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .overlay__menu{
+        height: 185vh;
+    }
+    .overlay__list{
+        text-align: center;
+    }
+    .region{
+        justify-content: center;
+    }
+    .overlay__list h6{
+        padding-left: 2.4rem;
+    }
+}
