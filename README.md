@@ -18,3 +18,6 @@ This website is a clone of Tesla Motors, all images, font, and informations are 
  ### Credits
 DaFont
 Tesla Inc.
+
+### Visit the site here
+https://tesla-duplicate.netlify.app/
